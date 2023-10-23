@@ -1,7 +1,7 @@
 name: GitHub Pages
 
 on:
-  push:s
+  push:
     branches:
     - main
 
