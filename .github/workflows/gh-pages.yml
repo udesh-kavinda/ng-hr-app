@@ -19,6 +19,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Install ng-cli
+      run: npm install -g @angular/cli
+
     - name: Build
       run: ng build --output-path docs --base-href /ng-hr-app/
 
