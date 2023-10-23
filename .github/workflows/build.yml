@@ -24,6 +24,8 @@ jobs:
     - name: Build
       run: ng build --output-path docs --base-href /ng-hr-app/
 
+    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
