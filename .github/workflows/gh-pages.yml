@@ -1,11 +1,6 @@
 name: Build and Deploy
 run-name: ${{ github.actor }} is started the deployment 🚀
-on:
-  push:
-    branches:
-      - main
-    workflow_dispatch:
-
+on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
