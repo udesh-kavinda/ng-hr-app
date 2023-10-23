@@ -1,7 +1,7 @@
 name: GitHub Pages
 
 on:
-  push:
+  push:s
     branches:
     - main
 
@@ -11,6 +11,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      run: echo "started"
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
