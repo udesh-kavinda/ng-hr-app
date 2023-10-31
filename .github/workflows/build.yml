@@ -21,6 +21,12 @@ jobs:
     - name: Install ng-cli
       run: npm install -g @angular/cli
 
+    - name: Install json-server
+      run: npm i json-server -g
+
+    - name: run json-server
+      run: json-server --watch db.json
+
     - name: Build
       run: ng build --output-path docs --base-href /ng-hr-app/
 
