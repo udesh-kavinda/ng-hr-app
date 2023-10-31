@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "id": "ddddd",
+      "name": "Udesh kavinda Abeysinghe",
+      "password": "123456789",
+      "email": "udesh.kavinda@outlook.com",
+      "gender": "male",
+      "role": "",
+      "isActive": false
+    }
+  ]
+}
