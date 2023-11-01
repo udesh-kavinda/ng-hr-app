@@ -24,6 +24,14 @@ jobs:
     - name: Build
       run: ng build --output-path docs --base-href /ng-hr-app/
 
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+          author_name: ${{ github.actor }}
+          author_email: udesh.kavinda@outlook.com
+          message: 'deployment'
+          add: '*.js'
+
     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
     - name: Deploy
